@@ -14,13 +14,9 @@ start:
   push 0xCCCCCCCC
   ret
  
-data:
+data: sample DLL is included in the package. You can use it to test the injector.
 
-A sample DLL is included in the package. You can use it to test the injector.
-
- 
-
-Sample DLL
+Contoh Sample DLL :
 
 #include <Windows.h>
  
@@ -43,7 +39,7 @@ BOOL WINAPI DllMain(HMODULE hModule,DWORD dwReason,LPVOID lpReserved)
 
 
 
-Source code of injector
+Source code untuk injectornya :
 
 #include <stdio.h>
 #include <Windows.h>
@@ -73,7 +69,7 @@ int main(int argc,char* argv[])
     CONTEXT ctx;
  
     printf("\n***********************************************************\n");
-    printf("\nZwInjector by zwclose7 - DLL injection via thread hijacking\n");
+    printf("\nZwInjector by ArdeanBimSaputra - DLL injection via thread hijacking\n");
     printf("\n***********************************************************\n");
  
     te32.dwSize=sizeof(te32);
